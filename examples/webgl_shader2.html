@@ -54,7 +54,7 @@
 
 				float red = abs( sin( position.x * position.y + time / 5.0 ) );
 				float green = abs( sin( position.x * position.y + time / 4.0 ) );
-				float blue = abs( sin( position.x * position.y + time / 3.0 ) );
+				float blue = abs( sin( position.x * position.y + time / 6.0 ) );
 				gl_FragColor = vec4( red, green, blue, 1.0 );
 
 			}
@@ -189,6 +189,8 @@
 
 				scene = new THREE.Scene();
 
+
+
 				var geometry = new THREE.BoxGeometry( 0.75, 0.75, 0.75 );
 
 				uniforms1 = {
@@ -205,8 +207,8 @@
 				uniforms2.texture.value.wrapS = uniforms2.texture.value.wrapT = THREE.RepeatWrapping;
 
 				var params = [
-					[ 'fragment_shader1', uniforms1 ],
-					[ 'fragment_shader2', uniforms2 ],
+					// [ 'fragment_shader1', uniforms1 ],
+					// [ 'fragment_shader2', uniforms2 ],
 					[ 'fragment_shader3', uniforms1 ],
 					[ 'fragment_shader4', uniforms1 ]
 				];

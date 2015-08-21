@@ -118,7 +118,7 @@
 				colors = new Float32Array( segments * 3 );
 
 				var pMaterial = new THREE.PointCloudMaterial( {
-					color: 0xFFFFFF,
+					color: 0xFF00FF,
 					size: 3,
 					blending: THREE.AdditiveBlending,
 					transparent: true,
@@ -159,7 +159,6 @@
 				group.add( pointCloud );
 
 				var geometry = new THREE.BufferGeometry();
-
 				geometry.addAttribute( 'position', new THREE.DynamicBufferAttribute( positions, 3 ) );
 				geometry.addAttribute( 'color', new THREE.DynamicBufferAttribute( colors, 3 ) );
 
